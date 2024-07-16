@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Final Drilling M2</title>
+</head>
+
+<body>
+
+
+    <button type="button" class="btn btn-success" onclick="mostrarIngles()"
+        ondblclick="mostrarEspanol()">Ing/Esp</button>
+
+
+    <button type="button" class="btn btn-success" onclick="modoNoche()" ondblclick="modoDia()">Dia/Noche</button>
+
+    <div id="esp">
+
+
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Sergio C. Oyarzo</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#SobreMi">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#AntecedentesEducacionales">Antecedentes
+                                Educacionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="SobreMi">
+            <div class="barras">
+
+                <hr>Resilente, emprendedor, autodidacta. Son mis principales definiciones que aplico dia a dia,
+                mejorando
+                continuamente.
+                <hr>
+            </div>
+            <ul>
+                <li>FECHA DE NACIMIENTO: 26 de marzo de 1991</li>
+                <li>TELEFONO: 1234578</li>
+
+            </ul>
+        </div>
+        <div id="Experiencia">
+            <h3 class="barras">ANTECEDENTES LABORALES</h3>
+            <ul>
+                <li><i>DuocUC:</i> Ayudante de Asignatura</li>
+            </ul>
+        </div>
+        <div id="Proyectos">
+            <h3 class="barras">PROYECTOS</h3>
+            <ul>
+                <li><i>Universidad de Santiago de Chile: </i>Participacion en Proyecto Auto Solar</li>
+                <li><i>OpenCree: </i> Participacion grupo de emprendimiento Open CREE</li>
+            </ul>
+        </div>
+
+        <div id="AntecedentesEducacionales">
+            <br><br>
+            <h3 class="barras">ANTECEDENTES ACADEMICOS</h3>
+            <ul>
+                <li>Duoc UC</li>
+                <hr>
+            </ul>
+        </div>
+
+
+
+
+        <!-- --------------------------------------- -->
+        <div id="Contacto" class="container p-3 my-3 bg-dark text-white col-6 rounded-5">
+
+            <form method="post" action="./assets/success.html" class="row g-3">
+                <div class="form-row">
+
+
+                    <div class="form-group col-md-12">
+                        <label for="emailInput">Correo Electrónico </label>
+                        <input type="email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            required id="emailInput" placeholder="Correo Electrónico">
+                    </div>
+
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="regioninput">Region: </label>
+                    <select id="regioninput" class="form-select form-control" required>
+                        <option disabled selected value="">Elige una región...</option>
+                        <option>Aisén </option>
+                        <option>Arica y parinacota</option>
+                        <option>Tarapaca</option>
+                        <option>Antofagasta</option>
+                        <option>Atacama</option>
+                        <option>Coquimbo</option>
+                        <option>Vaplaraiso</option>
+                        <option>Metropolitana</option>
+                        <option>Ohiggins</option>
+                        <option>Maule</option>
+                        <option>Ñuble</option>
+                        <option>Bio Bio</option>
+                        <option>Araucania</option>
+                        <option>Rios</option>
+                        <option>Lagos</option>
+                        <option>Magallanes y Antartica</option>
+                    </select>
+                </div>
+
+                <label for="areat">Mensaje</label>
+                <br>
+                <textarea id="areat" name="areat" rows="3" cols="60" placeholder="Inserte mensaje" required>
+                </textarea>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Para más información
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Contacto</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="ing">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Sergio C. Oyarzo</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div id="About">
+            <div class="barras">
+                <hr>Resilient, entrepreneurial, self-taught. They are my main definitions that I apply day to day,
+                continually improving.
+                <hr>
+            </div>
+            <ul>
+                <li>BIRTH DATE: 26 march 1991</li>
+                <li>Phone: 1234578</li>
+
+            </ul>
+        </div>
+        <div id="Experience">
+            <h3 class="barras">EXPERIENCE</h3>
+            <ul>
+                <li><i>DuocUC:</i> Subject Assistant</li>
+            </ul>
+        </div>
+        <div id="Projects">
+            <h3 class="barras">PROJECTS</h3>
+            <ul>
+                <li><i>University of Santiago, Chile: </i>Participation in Auto Solar Project</li>
+                <li><i>OpenCree: </i> Open CREE entrepreneurship group participation</li>
+            </ul>
+        </div>
+
+        <div id=Education>
+            <br><br>
+            <h3 class="barras">EDUCATION</h3>
+            <ul>
+                <li>Duoc UC</li>
+                <hr>
+            </ul>
+        </div>
+
+
+
+
+        <!-- ----------------------------ing -->
+
+
+
+        <div id="Contact" class="container p-3 my-3 bg-dark text-white col-6 rounded-5">
+
+            <form method="post" action="./assets/success.html" class="row g-3">
+                <div class="form-row">
+
+
+                    <div class="form-group col-md-12">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            required id="emailInput" placeholder="Email">
+                    </div>
+
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="regioninput">Region: </label>
+                    <select id="regioninput" class="form-select form-control" required>
+                        <option disabled selected value="">Pick a region...</option>
+                        <option>Aisén </option>
+                        <option>Arica y parinacota</option>
+                        <option>Tarapaca</option>
+                        <option>Antofagasta</option>
+                        <option>Atacama</option>
+                        <option>Coquimbo</option>
+                        <option>Vaplaraiso</option>
+                        <option>Metropolitana</option>
+                        <option>Ohiggins</option>
+                        <option>Maule</option>
+                        <option>Ñuble</option>
+                        <option>Bio Bio</option>
+                        <option>Araucania</option>
+                        <option>Rios</option>
+                        <option>Lagos</option>
+                        <option>Magallanes y Antartica</option>
+                    </select>
+                </div>
+
+                <label for="areat">Message</label>
+                <br>
+                <textarea id="areat" name="areat" rows="3" cols="60" placeholder="Insert menssage" required>
+            </textarea>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            For more information
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Contact</button>
+
+            </form>
+        </div>
+    </div>
+    <footer class="barras">
+
+
+
+
+        <a href="https://www.linkedin.com/in/oyarso/">
+            <img class="iconoPlano" src="./assets/img/linkico.png" alt="linkedinImg" />
+        </a>
+        <a href="https://github.com/oyarso">
+            <img class="iconoPlano" src="./assets/img/gitico.png" alt="GitHubImg" />
+        </a>
+        <script src="./assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </footer>
+</body>
+
+</html>

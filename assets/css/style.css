@@ -1,0 +1,40 @@
+body{
+    background-color: olivedrab;
+}
+
+li{
+    font-weight: bold;
+}
+
+img{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+#carrusel{
+    text-align: center;
+}
+
+.barras{
+    background-color: #f9db5c;
+    justify-content: space-evenly;
+}
+
+.iconoPlano{
+    width: 33px;
+    justify-content: space-evenly;
+    margin-left: 13px;
+    margin-right: 13px;
+    height: 33px;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
