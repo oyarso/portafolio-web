@@ -1,28 +1,32 @@
 body{
     background-color: olivedrab;
 }
-
 li{
     font-weight: bold;
 }
-
 img{
-    height:450px;
+    /* height:150px;
     width: 100%;
-    text-align: center;
-}
+     */
 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width:auto;
+    height: auto;
+    justify-content: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+ol{
+    text-decoration:double;
+}
 footer{
     text-align: center;
 }
-
-#carrusel{
-    text-align: center;
-}
-
 .barras{
     background-color: #f9db5c;
     justify-content: space-evenly;
+    padding-left:20px ;
 }
 
 .iconoPlano{

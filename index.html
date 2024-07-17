@@ -11,12 +11,8 @@
 </head>
 
 <body>
-
-
     <button type="button" class="btn btn-success" onclick="mostrarIngles()"
         ondblclick="mostrarEspanol()">Ing/Esp</button>
-
-
     <button type="button" class="btn btn-success" onclick="modoNoche()" ondblclick="modoDia()">Dia/Noche</button>
 
     <div id="esp">
@@ -56,12 +52,13 @@
         </nav>
 
         <div id="SobreMi">
-            <div class="barras">
+            <div class="barras ">
 
                 <hr>Resilente, emprendedor, autodidacta. Son mis principales definiciones que aplico dia a dia,
                 mejorando
                 continuamente.
                 <hr>
+
             </div>
             <ul>
                 <li>FECHA DE NACIMIENTO: 26 de marzo de 1991</li>
@@ -76,10 +73,17 @@
             </ul>
         </div>
         <div id="Proyectos">
-            <h3 class="barras">PROYECTOS</h3>
+            <h3 class="barras">PROYECTOS Y HABILIDADES</h3>
             <ul>
+                <ol>Proyectos:</ol>
                 <li><i>Universidad de Santiago de Chile: </i>Participacion en Proyecto Auto Solar</li>
                 <li><i>OpenCree: </i> Participacion grupo de emprendimiento Open CREE</li>
+            </ul>
+            <ul>
+                <ol>Habilidades:</ol>
+                <li>Auto-Aprendizaje</li>
+                <li>Perseverancia</li>
+                <li>Office Intermedio</li>
             </ul>
         </div>
 
@@ -88,13 +92,13 @@
             <h3 class="barras">ANTECEDENTES ACADEMICOS</h3>
             <ul>
                 <li>Duoc UC</li>
-                
+
             </ul>
         </div>
 
         <div id="Contacto" class="container p-3 my-3 bg-dark text-white col-6 rounded-5">
 
-            <form method="post" action="./assets/success.html" class="row g-3">
+            <form method="post" class="row g-3" onsubmit="subirForm()">
                 <div class="form-row">
 
 
@@ -182,7 +186,7 @@
 
 
         <div id="About">
-            <div class="barras">
+            <div class="barras ml-5">
                 <hr>Resilient, entrepreneurial, self-taught. They are my main definitions that I apply day to day,
                 continually improving.
                 <hr>
@@ -200,10 +204,20 @@
             </ul>
         </div>
         <div id="Projects">
-            <h3 class="barras">PROJECTS</h3>
+            <h3 class="barras">PROJECTS AND SKILLS</h3>
             <ul>
+                <ol>Proyects:</ol>
                 <li><i>University of Santiago, Chile: </i>Participation in Auto Solar Project</li>
                 <li><i>OpenCree: </i> Open CREE entrepreneurship group participation</li>
+
+            </ul>
+            <ul>
+                <ol>Skills:</ol>
+                <li>Self-learning</li>
+                <li>Perseverance</li>
+                <li>Office</li>
+
+            </ul>
             </ul>
         </div>
 
@@ -217,7 +231,7 @@
 
         <div id="Contact" class="container p-3 my-3 bg-dark text-white col-6 rounded-5">
 
-            <form method="post" action="./assets/success.html" class="row g-3">
+            <form method="post" class="row g-3" onsubmit="subirForm()">
                 <div class="form-row">
 
 
@@ -274,8 +288,6 @@
 
 
 
-
-
     <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -284,6 +296,7 @@
             <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner rounded-5">
+
             <div class="carousel-item active">
                 <img src="./assets/img/catdoglover.PNG" class="d-block" alt="gatoPerro">
             </div>
@@ -293,6 +306,7 @@
             <div class="carousel-item">
                 <img src="./assets/img/catdoglover3.PNG" class="d-block" alt="gatoPerro3">
             </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -302,6 +316,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
         </button>
+
     </div>
 
 
@@ -312,10 +327,10 @@
 
 
         <a href="https://www.linkedin.com/in/oyarso/">
-            <img class="iconoPlano" src="./assets/img/linkico.png" alt="linkedinImg">
+            <img class="iconoPlano mt-3 mb-3" src="./assets/img/linkico.png" alt="linkedinImg">
         </a>
         <a href="https://github.com/oyarso">
-            <img class="iconoPlano" src="./assets/img/gitico.png" alt="GitHubImg">
+            <img class="iconoPlano mt-3 mb-3" src="./assets/img/gitico.png" alt="GitHubImg">
         </a>
         <script src="./assets/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
